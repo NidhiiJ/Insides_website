@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 
 interface HeroImageProps {
   leftOrRight: "left" | "right";
