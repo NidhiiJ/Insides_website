@@ -1,29 +1,30 @@
 import { useEffect, useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 interface BurgerProps {
   handleBurgerClick: React.MouseEventHandler;
 }
 
 const BurgerMenu: React.FC<BurgerProps> = ({ handleBurgerClick }) => {
-  
   return (
     <nav
       className="absolute p-10 pt-14 top-16 right-0 flex flex-col justify-center items-center gap-6 bg-[#686354e9] font-semibold text-white rounded-l-md z-50 overflow-y-auto"
       style={{ transition: "top 0.5s ease" }}
+      onClick={handleBurgerClick}
     >
       <img src="close-icon.svg" className="hidden absolute top-3 right-5 h-6" onClick={handleBurgerClick}/>
-      <Link to='/'>WHAT WE DO</Link>
+      <Link to='/WhyUs'>WHAT WE DO</Link>
       <Link to='/Portfolio'>PROJECTS</Link>
       <Link to='/WhoAreWe'>ABOUT US</Link>
       <Link to='/ContactUs'>CONTACT US</Link>
-      
     </nav>
   );
 };
 
 const Navbar = () => {
+  // burger menu
   const [showMenu, setshowMenu] = useState(false);
+  // nav sticky
   const [isTop, setIsTop] = useState(true);
 
     useEffect(() => {
@@ -43,13 +44,16 @@ const Navbar = () => {
     setshowMenu(!showMenu);
   };
 
+
   return (
-    <div className={`flex flex-row justify-between bg-[#00000089] ${isTop ? 'relative' : 'fixed'} w-full py-3 px-8 z-[51]`}>
+    <div className={`flex flex-row justify-between bg-[#00000089] ${isTop ? '' : 'fixed  transition-all'} w-full py-3 px-8 z-[51]`}>
+    {/* <div className={`flex flex-row justify-between bg-[#00000089]  w-full py-3 px-8  z-[51]`}> */}
       <div className="hidden md:flex flex-row gap-4 lg:gap-12 ml-[5%]">
-      <Link to='/'>WHAT WE DO</Link>
-      <Link to='/Portfolio'>PROJECTS</Link>
+      <NavLink to='/WhyUs' className={({isActive})=> isActive ?'transition-all underline underline-offset-8':"transition-all font-normal hover:font-semibold"}>WHAT WE DO</NavLink>
+      
+      <NavLink to='/Portfolio' className={({isActive})=> isActive ?'transition-all underline underline-offset-8':"transition-all font-normal hover:font-semibold"}>PROJECTS</NavLink>
       </div>
-      <h1>LOGO</h1>
+      <NavLink to='/'>LOGO</NavLink>
 
       {showMenu ? (
         <div className="burger md:hidden ">
@@ -74,8 +78,8 @@ const Navbar = () => {
       )}
 
       <div className="hidden md:flex flex-row gap-4 lg:gap-12 mr-[5%]">
-      <Link to='/WhoAreWe'>ABOUT US</Link>
-      <Link to='/ContactUs'>CONTACT US</Link>
+      <NavLink to='/WhoAreWe' className={({isActive})=> isActive ?'transition-all underline underline-offset-8':"transition-all font-normal hover:font-semibold"}>ABOUT US</NavLink>
+      <NavLink to='/ContactUs' className={({isActive})=> isActive ?'transition-all underline underline-offset-8':"transition-all font-normal hover:font-semibold"}>CONTACT US</NavLink>
       </div>
      
     </div>

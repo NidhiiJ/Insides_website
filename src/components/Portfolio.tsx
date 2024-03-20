@@ -50,7 +50,7 @@ interface PortfolioProps {
 const Portfolio: React.FC<PortfolioProps> = ({windowSize}) => {
 
   return (
-    <div className=''>
+    <div id='portfolio' className=''>
       <div className='md:flex flex-row gap-3 items-center justify-around px-4 pb-5 md:pb-15'>
         <div className='flex flex-col items-center md:items-start '>
           <div className='text-[15px]'>INSIDE'S</div>

@@ -50,7 +50,7 @@ const WhyUs = () => {
       }
 
   return (
-    <div className="px-8">
+    <div id='why-us' className="px-8">
         <div className="text-center text-[32px] md:text-[43px] lg:text-[54px] font-Maharlika pb-7 md:pb-14">Why Choose Us?</div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 justify-items-center">
         {renderTextCard(content)}

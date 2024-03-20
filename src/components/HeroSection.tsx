@@ -33,9 +33,8 @@ const HeroSection = () => {
     "h-full w-full md:max-w-[18rem] lg:max-w-[370px] xl:max-w-[400px] md:h-[24rem] lg:h-[529px] 3xl:max-w-[490px]";
   // var imageSectionDimensions = 'h-full w-full lg:max-w-[378px] mdmax:h-[400px] lg:h-[569px]'
   return (
-    <div>
-      <Navbar />
-      <div className="pt-20 pb-8 md:flex flex-row justify-between items gap-10 items-center w-full h-full overflow-x-hidden ">
+    <div id='hero-section'>
+      <div className=" pt-5 pb-8 md:flex flex-row justify-between items gap-10 items-center w-full h-full overflow-x-hidden ">
         <HeroImage
           leftOrRight="left"
           imageSectionDimensions={imageSectionDimensions}
@@ -45,7 +44,7 @@ const HeroSection = () => {
           <div className="absolute bottom-52"><img src="/homepage-arrow.svg" alt="arrow img" className="h-[85px]"/></div>
         </div> */}
         {/* px-10 md:px-14 lg:px-24 */}
-        <div className=" flex flex-col items-center px-10 md:px-14 lg:px-18 ">
+        <div className=" rounded-xl flex flex-col items-center mx-10 md:mx-14 lg:mx-18 p-2 ">
           <span className="text-center text-[24px] md:text-[34px] lg:text-[48px] font-Maharlika ">
             Build your dream Home curated and personalized  by <br />
             <span className=" text-[32px] md:text-[43px] lg:text-[54px]  text-[#C4B99D] font-medium">

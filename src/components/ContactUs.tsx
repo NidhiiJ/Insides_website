@@ -1,13 +1,13 @@
 const ContactUs = () => {
   return (
-    <div className="flex flex-col flex-wrap justify-center items-center p-2">
+    <div id='contact-us' className="flex flex-col flex-wrap justify-center items-center p-2">
       <span className=" text-[11px] md:text-[12.5px] lg:text-[14px]">
         HAVE A PROJECT IN MIND?
       </span>
       <span className="pb-5 font-Maharlika text-[32px] md:text-[43px] lg:text-[54px]">
         Contact Us
       </span>
-      <div className=" lg:h-[38em] lg:w-[80%] bg-white rounded-2xl md:grid grid-cols-3">
+      <div className=" lg:h-[38em] lg:w-[80%] bg-white rounded-2xl grid grid-rows-auto md:grid-cols-3">
         <div className=" h-full w-full p-3">
           <div className="bg-contactus-image h-full w-full rounded-lg flex flex-col gap-5 items-start p-2">
             <div className=" md:block md:basis-1/4 pl-2 pt-6 font-semibold text-lg md:text-2xl">
@@ -40,8 +40,8 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-2 text-black m-8 ">
-          <form action="submit">
+        <div className="md:col-span-2 text-black m-8 ">
+          <form id='contact-form' action="/ThankYou">
             <div className="grid md:grid-cols-2  gap-5 md:gap-[3.25rem] my-5 ">
               <div>
                 <label htmlFor="firstName">First Name:</label>
@@ -125,7 +125,7 @@ const ContactUs = () => {
             </div>
 
             <div className="w-full h-full flex flex-col items-center md:items-end ">
-              <button className="border-2 border-black rounded-full py-2 px-8 font-inter flex flex-row items-center font-[600] max-md:mt-5">
+              <button type="submit" className="border-2 border-black rounded-full py-2 px-8 font-inter flex flex-row items-center font-[600] max-md:mt-5">
                 <span className="pr-4 text-[12px] md:text-[18px]">
                   Submit Inquiry
                 </span>

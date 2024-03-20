@@ -58,7 +58,7 @@ interface TestimonialsProps {
 const Testimonials: React.FC<TestimonialsProps> = ({windowSize}) => {
 
   return (
-    <div className="">
+    <div id='testimonials' className="">
       <div className=" bg-[#dedbcf] py-10">
         <div className="flex flex-col items-center pb-5">
           <span className="text-black ">OUR</span>

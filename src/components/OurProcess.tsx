@@ -31,13 +31,9 @@ const TextCard = ({num}: allproptypes) =>{
 const OurProcess = () => {
   // w-[532px] h-[447px]
   return (
-    <div className="flex flex-col items-center ">
+    <div id='our-process' className="flex flex-col items-center ">
         <div className="">
           <div className="text-center lg:text-start text-[32px] md:text-[43px] lg:text-[54px] font-Maharlika pb-6">Our Process</div>
-          {/* <div className=" lg:hidden relative md:max-w-[990px] max-h-[530px] m-2">
-              <img src="/ourprocess-img.jpg" className="w-full h-full object-cover rounded-[15px] relative z-10 brightness-75 " alt="img" />
-              <div className="w-full h-full border-b-2 lg:border-r-2 border-[#C4B99D] absolute rounded-[15px] top-[3%] lg:top-[39px] lg:left-[16px] z-0"></div>
-          </div> */}
           <div className="relative">
           <div className=" lg:absolute w-full lg:w-[480px] bg-[#3f3c33] lg:bg-[#00000090] backdrop-blur-lg  lg:rounded-[15px] lg:left-[30em] lg:top-[-6em] z-20 mt-5 py-5">
             <TextCard num ={1}/>
