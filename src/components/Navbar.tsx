@@ -59,7 +59,7 @@ const Navbar = () => {
         <div className="burger md:hidden ">
           <img
             src="close-icon.svg"
-            className="h-[30px] w-[30px] transition-all duration-500 ease-in-out"
+            className="h-7 transition-all duration-500 ease-in-out"
             alt="close"
             onClick={handleBurgerClick}
           />
