@@ -10,7 +10,7 @@ const projectdata: Project[] = [
       // image : '/img_card1.jpg',
       image : '/ourprocess-img.jpg',
       title: 'PROJECT1',
-      description:'yo wassupyo wassup',
+      description:'yo wassup',
       paddingTop: true
     },
     {
