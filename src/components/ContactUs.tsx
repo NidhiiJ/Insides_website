@@ -17,7 +17,7 @@ const ContactUs:React.FC<ContactUsProps>  = ({setName}) => {
       </div>
       <div className=" lg:h-[38em] lg:w-[80%] bg-white rounded-2xl grid grid-rows-auto md:grid-cols-3">
         <div id='contact-card' className=" h-full w-full p-3">
-          <div className="bg-contactus-image h-full w-full rounded-lg flex flex-col gap-5 items-start p-2">
+          <div className="bg-contactus-image bg-cover h-full w-full rounded-lg flex flex-col gap-5 items-start p-2">
             <div className=" md:block md:basis-1/4 pl-2 pt-6 font-semibold text-lg md:text-2xl">
               Contact Information
             </div>
