@@ -9,19 +9,20 @@ import HeroSection from '../components/HeroSection'
 
 interface HomeProps {
   windowSize : number
+  setName: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const Home:React.FC<HomeProps> = ({windowSize}) => {
+const Home:React.FC<HomeProps> = ({windowSize,setName}) => {
 
   return (
     <div id='home'  className='flex flex-col gap-14 md:gap-40 '>
-      <HeroSection/>
+      <HeroSection windowSize={windowSize} />
       <WhoAreWe/>
       <OurProcess/>
       <WhyUs/>
       <Portfolio windowSize={windowSize}/>
       <Testimonials  windowSize={windowSize}/>
-      <ContactUs/>
+      <ContactUs setName={setName}/>
     </div>
   )
 }

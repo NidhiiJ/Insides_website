@@ -4,16 +4,16 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
-import Portfolio from "./components/Portfolio";
 import WhoAreWe from "./components/WhoAreWe";
 import WhyUs from "./components/WhyUs";
-
 import { Route, Routes } from "react-router-dom";
 import ThankYou from "./components/ThankYou";
 import { GoToTopButton } from "./components/GoToTopButton";
+import PortfolioPage from "./pages/PorfolioPage";
 
 function App() {
   const [windowSize, setwindowSize] = useState(window.screen.width);
+  const [name, setName] = useState('');
 
   useEffect(() => {
     const handleResize = () => {
@@ -30,15 +30,15 @@ function App() {
   const router = [
     {
       path: "/",
-      element: <Home windowSize={windowSize} />,
+      element: <Home windowSize={windowSize} setName={setName} />,
     },
     {
       path: "/ContactUs",
-      element: <ContactUs />,
+      element: <ContactUs setName={setName} />,
     },
     {
       path: "/Portfolio",
-      element: <Portfolio windowSize={windowSize} />,
+      element: <PortfolioPage/>
     },
     {
       path: "/WhoAreWe",
@@ -50,8 +50,8 @@ function App() {
     },
     {
       path: "/ThankYou",
-      element: <ThankYou/>
-    }
+      element: <ThankYou name={name}/>
+    },
   ];
 
   return (

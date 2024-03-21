@@ -11,27 +11,27 @@ interface Content {
 const WhyUs = () => {
     const content:Content ={
         heading1: {
-            'url':'/whyus-1.svg',
+            'url':'/whyus-1.png',
             'text': 'We manage your property from A to Z: Tenant search, reception, maintenance.'
         },
         heading2: {
-            url:'/whyus-2.svg',
+            url:'/whyus-2.png',
             text: 'Each month, we guarantee your rent, whatever the occupancy rate.'
         },
         heading3: {
-            url:'/whyus-3.svg',
+            url:'/whyus-3.png',
             text: 'You can recover your property whenever you want, the lease is concluded.'
         },
         heading4: {
-            'url':'/whyus-1.svg',
+            'url':'/whyus-1.png',
             'text': 'We manage your property from A to Z: Tenant search, reception, maintenance.'
         },
         heading5: {
-            url:'/whyus-2.svg',
+            url:'/whyus-2.png',
             text: 'Each month, we guarantee your rent, whatever the occupancy rate.'
         },
         heading6: {
-            url:'/whyus-3.svg',
+            url:'/whyus-3.png',
             text: 'You can recover your property whenever you want, the lease is concluded.'
         },
     }

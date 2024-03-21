@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -11,20 +12,23 @@ const Footer = () => {
             <div id='foot-sitemap'>
                 <h2 className="font-bold pb-2">Site map</h2>
                 <div className="grid grid-rows-auto md:grid-cols-2 md:grid-rows-auto gap-y-1 md:gap-x-20">
-                    <a href="">Home</a>
-                    <a href="">Our Process</a>
-                    <a href="">About Us</a>
-                    <a href="">Projects</a>
-                    <a href="">Contact Us</a>
+                    <Link to="/">Home</Link>
+                    <a href="#our-process">Our Process</a>
+                    <a href="#about-us">About Us</a>
+                    <a href="#portfolio">Projects</a>
+                    <a href="#contact-us">Contact Us</a>
                 </div>
             </div>
         </div>
         <div className="h-[0.8px] w-full self-center bg-[#051D1D] mt-14"></div>
         <div className="flex flex-col md:flex-row items-center md:justify-between mt-5">
             <div className="flex gap-3">
-                <i>icon1</i>
-                <i>icon2</i>
-                <i>icon3</i>
+            <a href="" id="twitter" className="p-2 border-[#051d1d5c] border rounded-full">
+            <img src="/twitter.svg" className="h-4" alt="twitter" style={{ filter: 'invert(80%)' }} />
+              </a>
+              <a href="" id="instagram" className="p-2 border-[#051d1d5c] border rounded-full">
+              <img src="/instagram.svg" className="h-4" alt="instagram" style={{ filter: 'invert(80%)' }} />
+              </a>
             </div>
             <span className="text-center">© 2024 DN Designs, All rights reserved</span>
         </div>
