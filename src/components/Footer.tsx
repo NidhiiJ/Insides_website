@@ -12,9 +12,9 @@ const Footer = () => {
             <div id='foot-sitemap'>
                 <h2 className="font-bold pb-2">Site map</h2>
                 <div className="grid grid-rows-auto md:grid-cols-2 md:grid-rows-auto gap-y-1 md:gap-x-20">
-                    <Link to="/">Home</Link>
+                    <a href="#hero-section">Home</a>
                     <a href="#our-process">Our Process</a>
-                    <a href="#about-us">About Us</a>
+                    <a href="#who-are-we">About Us</a>
                     <a href="#portfolio">Projects</a>
                     <a href="#contact-us">Contact Us</a>
                 </div>
