@@ -10,6 +10,7 @@ import { Route, Routes } from "react-router-dom";
 import ThankYou from "./components/ThankYou";
 import { GoToTopButton } from "./components/GoToTopButton";
 import PortfolioPage from "./pages/PorfolioPage";
+import OurProcess from "./components/OurProcess";
 
 function App() {
   const [windowSize, setwindowSize] = useState(window.screen.width);
@@ -51,6 +52,10 @@ function App() {
     {
       path: "/ThankYou",
       element: <ThankYou name={name}/>
+    },
+    {
+      path: "/OurProcess",
+      element: <OurProcess/>
     },
   ];
 

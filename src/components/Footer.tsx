@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -11,11 +12,11 @@ const Footer = () => {
             <div id='foot-sitemap'>
                 <h2 className="font-bold pb-2">Site map</h2>
                 <div className="grid grid-rows-auto md:grid-cols-2 md:grid-rows-auto gap-y-1 md:gap-x-20">
-                    <a href="#hero-section">Home</a>
-                    <a href="#our-process">Our Process</a>
-                    <a href="#who-are-we">About Us</a>
-                    <a href="#portfolio">Projects</a>
-                    <a href="#contact-us">Contact Us</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/OurProcess">Our Process</Link>
+                    <Link to="/WhoAreWe">About Us</Link>
+                    <Link to="/Portfolio">Projects</Link>
+                    <Link to="/ContactUs">Contact Us</Link>
                 </div>
             </div>
         </div>
