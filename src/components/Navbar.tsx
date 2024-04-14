@@ -53,7 +53,7 @@ const Navbar = () => {
       
       <NavLink to='/Portfolio' className={({isActive})=> isActive ?'transition-all underline underline-offset-8':"transition-all font-normal hover:font-semibold"}>PROJECTS</NavLink>
       </div>
-      <NavLink to='/'>LOGO</NavLink>
+      <NavLink to='/' className=' font-Maharlika text-[26px] text-[#C4B99D] font-medium'>INSIDES</NavLink>
 
       {showMenu ? (
         <div className="burger md:hidden ">

@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import WhoAreWe from "./components/WhoAreWe";
 import WhyUs from "./components/WhyUs";
 import { Route, Routes } from "react-router-dom";
-import ThankYou from "./components/ThankYou";
+import ThankYou from "./pages/ThankYou";
 import { GoToTopButton } from "./components/GoToTopButton";
 import PortfolioPage from "./pages/PorfolioPage";
 import OurProcess from "./components/OurProcess";
