@@ -30,7 +30,7 @@ const Footer = () => {
               <img src="/instagram.svg" className="h-4" alt="instagram" style={{ filter: 'invert(80%)' }} />
               </a>
             </div>
-            <span className="text-center">© 2024 DN Designs, All rights reserved</span>
+            <span className="text-center"><a href="www.flaykstudio.com">© 2024 Flayk Studio, All rights reserved</a></span>
         </div>
     </div>
   )
